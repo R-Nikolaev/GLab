@@ -1,0 +1,102 @@
+.about {
+    margin-top: 180px;
+    @include media-mx(992) {
+      margin-top: 80px;
+    }
+    h2 {
+        margin-bottom: 85px;
+        span {
+            background: var(--primary-06);
+            color: var(--white);
+            @include media-mx(992) {
+              background: initial;
+              color: var(--primary-06);
+              margin-left: 0;
+            }
+        }
+    }
+    .row {
+        padding: 0 75px;
+        row-gap: 15px;
+    }
+    .item {
+        height: 100%;
+        border-radius: 32px;
+        box-shadow:
+            0 0 1px 0 rgba(19, 23, 35, 0.04),
+            0 0 2px 0 rgba(19, 23, 35, 0.06),
+            0 3px 6px 0 rgba(19, 23, 35, 0.04);
+        background-color: var(--grayscale-07, #f0f0f0);
+        color: var(--grayscale-01, #000);
+        font-weight: 700;
+        font-family: Arial, sans-serif;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        overflow: hidden;
+    }
+
+    .digit,
+    .plus {
+        position: relative;
+        padding: 0 8px;
+    }
+
+    .flip {
+        animation: flip 0.5s forwards ease-in-out;
+    }
+
+    @keyframes flip {
+        0% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+    }
+
+    .item b {
+        font-family: 'InterTight';
+        display: inline-block;
+        padding: 0 45px;
+        margin: 205px 0 32px;
+        font-size: 73px;
+        position: relative;
+        font-weight: 700;
+        letter-spacing: 9px;
+        @include media-mx(1900) {
+          margin: 105px 0  20px;
+          font-size: 54px;
+        }
+    }
+
+    .flip {
+        animation: flip 0.5s ease-in-out;
+    }
+
+    @keyframes flip {
+        0% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+    }
+
+    .item span {
+        padding: 0 32px 32px;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: 1px;
+        margin-bottom: auto;
+
+        @include media-mx(1900) {
+          font-size: 24px;
+        }
+    }
+}

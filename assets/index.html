@@ -1,0 +1,1905 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="library/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="library/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="styles/fonts.css">
+<link rel="stylesheet" href="styles/main.css">
+<body>
+<div class="banner">
+    <div class="container">
+        <div class="banner-content">
+            <div class="banner-back"></div>
+            <div class="row align-items-center h-100">
+                <div class="col-7">
+                    <h2>Забирайте скидку 50% на новые навыки и развитие</h2>
+                </div>
+                <div class="col-5 d-flex">
+                    <div class="timer">
+                        <span id="timer"></span>
+                    </div>
+                    <a class="btn ms-auto" href="#profession">Выбрать курс</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<header class="d-flex align-items-center">
+    <div class="container">
+        <div class="row align-items-center justify-content-between justify-content-lg-start">
+            <div class="col-xl-4 col-xxl-6 col-lg-3 col-7 left">
+                <a class="logo d-flex" href="#">
+                    <img src="images/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="col-xxl-6 col-xl-8 col-lg-9 col-3 right">
+                <ul class="d-flex justify-content-end justify-content-lg-between align-items-center ps-0">
+                    <li class="d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#profession">Каталог</a></li>
+                    <li class="d-none d-lg-block"><a class="d-flex align-items-center kids" href="https:/kids.geniumlab.ru/">Для детей <img
+                                src="images/kids.svg" alt=""></a></li>
+                    <li class="d-none d-lg-block"><a href="#">Бесплатно</a></li>
+                    <li class="d-none d-lg-block"><a href="#footer">О школе</a></li>
+                    <li class="text-start text-lg-end"><a href="#footer">Войти</a></li>
+                </ul>
+            </div>
+            <div class="col-2 d-lg-none d-flex">
+                <div class="burger-menu ms-auto">
+                    <div class="burger-icon"></div>
+                </div>
+                <div class="menu">
+                    <div class="swipe-menu">
+                        <ul class="d-flex align-items-center">
+                            <li><a href="#">Каталог</a></li>
+                            <li><a class="d-flex align-items-center kids" href="#">Для детей<img src="images/kids.svg"
+                                        alt=""></a></li>
+                            <li><a href="#">Бесплатно</a></li>
+                            <li><a href="#">О школе</a></li>
+                        </ul>
+                    </div>
+                    <form class="search-form d-flex align-items-center">
+                        <button type="submit">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17Z"
+                                    stroke="#9EA4BE" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21 21L15 15" stroke="#9EA4BE" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <input type="text" placeholder="Профессия или навык" />
+                    </form>
+                    <ul class="links-mob">
+                        <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt="">
+                                Бэкенд-разработка</a></li>
+                        <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt="">
+                                Профессии</a></li>
+                        <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt="">
+                                Искусственный интеллект</a></li>
+                        <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt=""> Блокчейн
+                                разработка</a></li>
+                        <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt="">
+                                Фронтенд-разработка</a></li>
+                        <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt=""> Мобильная
+                                разработка</a></li>
+                        <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt="">
+                                Тестирование</a></li>
+                        <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt="">
+                                Администрирование</a></li>
+                        <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt=""> Создание
+                                игр</a></li>
+                        <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt=""> Дизайн</a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt="">
+                                Корпоративным клиентам</a></li>
+                        <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt=""> Будь в
+                                тренде</a></li>
+                        <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt=""> Начать
+                                бесплатно</a></li>
+                        <li><a class="d-flex align-items-center" href="#"> <img src="images/cubs.svg" alt=""> Все
+                                курсы</a></li>
+                    </ul>
+                    <div class="slider">
+                        <div class="header-slider d-flex align-items-center justify-content-between">
+                            <h5>Популярное</h5>
+                            <div class="mob-navigation">
+                                <div class="swiper-button-next mob-next"></div>
+                                <div class="swiper-button-prev mob-prev"></div>
+                            </div>
+                        </div>
+                        <div class="swiper mob-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <ul class="d-flex flex-column">
+                                        <li><a class="d-flex align-items-center" href="#"><img
+                                                    src="images/header-slider-1.png" alt="">Python-разработчик</a></li>
+                                        <li><a class="d-flex align-items-center" href="#"><img
+                                                    src="images/header-slider-1.png" alt="">Java-разработчик</a></li>
+                                        <li><a class="d-flex align-items-center" href="#"><img
+                                                    src="images/header-slider-1.png" alt="">Блокчейн-разработка для
+                                                начинающих</a></li>
+                                        <li><a class="d-flex align-items-center" href="#"><img
+                                                    src="images/header-slider-1.png" alt="">ChatGpt</a></li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <ul class="d-flex flex-column">
+                                        <li><a class="d-flex align-items-center" href="#"><img
+                                                    src="images/header-slider-1.png" alt="">Python-разработчик</a></li>
+                                        <li><a class="d-flex align-items-center" href="#"><img
+                                                    src="images/header-slider-1.png" alt="">Java-разработчик</a></li>
+                                        <li><a class="d-flex align-items-center" href="#"><img
+                                                    src="images/header-slider-1.png" alt="">Блокчейн-разработка для
+                                                начинающих</a></li>
+                                        <li><a class="d-flex align-items-center" href="#"><img
+                                                    src="images/header-slider-1.png" alt="">ChatGpt</a></li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <ul class="d-flex flex-column">
+                                        <li><a class="d-flex align-items-center" href="#"><img
+                                                    src="images/header-slider-1.png" alt="">Python-разработчик</a></li>
+                                        <li><a class="d-flex align-items-center" href="#"><img
+                                                    src="images/header-slider-1.png" alt="">Java-разработчик</a></li>
+                                        <li><a class="d-flex align-items-center" href="#"><img
+                                                    src="images/header-slider-1.png" alt="">Блокчейн-разработка для
+                                                начинающих</a></li>
+                                        <li><a class="d-flex align-items-center" href="#"><img
+                                                    src="images/header-slider-1.png" alt="">ChatGpt</a></li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <ul class="d-flex flex-column">
+                                        <li><a class="d-flex align-items-center" href="#"><img
+                                                    src="images/header-slider-1.png" alt="">Python-разработчик</a></li>
+                                        <li><a class="d-flex align-items-center" href="#"><img
+                                                    src="images/header-slider-1.png" alt="">Java-разработчик</a></li>
+                                        <li><a class="d-flex align-items-center" href="#"><img
+                                                    src="images/header-slider-1.png" alt="">Блокчейн-разработка для
+                                                начинающих</a></li>
+                                        <li><a class="d-flex align-items-center" href="#"><img
+                                                    src="images/header-slider-1.png" alt="">ChatGpt</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="hero">
+    <div class="container grey d-flex flex-column">
+        <div class="coursors-box d-flex flex-column" id="container">
+            <h1>Откройте двери в мир IT</h1>
+            <h2 class="mb-0">Мы обучаем тому, что действительно нужно</h2>
+            <div class="row">
+                <div class="col-6 d-none d-lg-block mx-auto">
+                    <div class="cards">
+                        <img src="images/hero-card-1.png" alt="">
+                        <img src="images/hero-card-2.png" alt="">
+                        <img src="images/hero-card-3.png" alt="">
+                    </div>
+                </div>
+                <div class="col-11 d-lg-none me-auto">
+                    <div class="cards d-flex flex-column">
+                        <span>
+                            <p>Практика на реальных примерах </p>
+                        </span>
+                        <span>
+                            <p>Интересные проекты в вашем Портфолио</p>
+                        </span>
+                        <span>
+                            <p>От новичка к TeamLead</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <img class="d-none d-lg-block" id="coursor-1" src="images/coursor-1.png" alt="">
+            <img id="coursor-2" src="images/coursor-2.png" alt="">
+            <img class="d-none d-lg-block" id="coursor-3" src="images/coursor-3.png" alt="">
+            <img id="coursor-4" src="images/coursor-4.png" alt="">
+        </div>
+        <div class="row d-none d-lg-flex">
+            <div class="col-11 mx-auto">
+                <ul class="d-flex flex-wrap">
+                    <li><a class="d-flex align-items-center" href="#"> <img src="images/flash.svg" alt=""> Все
+                            программы</a></li>
+                    <li><a href="#profession">Бэкенд-разработка</a></li>
+                    <li><a href="#profession">Профессии</a></li>
+                    <li><a href="#profession">Искусственный интеллект</a></li>
+                    <li><a href="#profession">Блокчейн разработка</a></li>
+                    <li><a href="#profession">Фронтенд разработка</a></li>
+                    <li><a href="#profession">Мобильная разработка</a></li>
+                    <li><a href="#profession">Тестирование</a></li>
+                    <li><a href="#profession">Администрирование</a></li>
+                    <li><a href="#profession">Создание игр</a></li>
+                    <li><a href="#profession">Дизайн</a></li>
+                    <li><a href="#profession">Мини продукты</a></li>
+                    <li><a href="#profession">Будь в тренде</a></li>
+                    <li><a href="#profession">Корпоративным клиентам</a></li>
+                    <li><a href="#profession">Начать бесплатно</a></li>
+                </ul>
+            </div>
+        </div>
+        <a class="btn mx-lg-auto me-auto" href="#">
+            <p class="m-0 d-none d-lg-block">Начать учиться бесплатно</p>
+            <p class="m-0 d-lg-none">Учиться бесплатно</p>
+        </a>
+    </div>
+    <div class="container">
+        <div class="row d-lg-none">
+            <div class="col-12 mx-auto mt-5">
+                <ul class="d-flex flex-wrap p-0">
+                    <li><a class="d-flex align-items-center" href="#"> <img src="images/flash.svg" alt=""> Все
+                            программы</a></li>
+                    <li><a href="#">Бэкенд-разработка</a></li>
+                    <li><a href="#">Профессии</a></li>
+                    <li><a href="#">Искусственный интеллект</a></li>
+                    <li><a href="#">Блокчейн разработка</a></li>
+                    <li><a href="#">Фронтенд разработка</a></li>
+                    <li><a href="#">Мобильная разработка</a></li>
+                    <li><a href="#">Тестирование</a></li>
+                    <li><a href="#">Администрирование</a></li>
+                    <li><a href="#">Создание игр</a></li>
+                    <li><a href="#">Дизайн</a></li>
+                    <li><a href="#">Мини продукты</a></li>
+                    <li><a href="#">Будь в тренде</a></li>
+                    <li><a href="#">Корпоративным клиентам</a></li>
+                    <li><a href="#">Начать бесплатно</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about d-none d-md-block">
+    <div class="container">
+        <h2 class="section-title">О нас <span>в цифрах</span></h2>
+        <div class="row justify-content-stretch">
+            <div class="col-12 col-lg-6 col-xxl-4">
+                <div class="d-flex flex-column item" style="background: url('../../images/about-1.jpg')">
+                    <b id="counter-1" data-target="13000">0+</b>
+                    <span>Студентов уже получили свои дипломы</span>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xxl-4">
+                <div class="d-flex flex-column item" style="background: url('../../images/about-2.jpg')">
+                    <b id="counter-2" data-target="180">0+</b>
+                    <span>Количество программ на нашей платформе</span>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xxl-4">
+                <div class="d-flex flex-column item" style="background: url('../../images/about-3.jpg')">
+                    <b id="counter-3" data-target="6440">0+</b>
+                    <span>Уроков с лучшими нашими препододавателями</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="programs">
+    <div class="container">
+        <h2 class="section-title">Найдите время на то, что реально
+            <span>важно для вас,</span> а не для других. <br>
+            Начните учиться бесплатно
+        </h2>
+    </div>
+    <div class="swiper container programs-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a class="slide-box d-flex flex-column" href="#">
+                    <div class="img-box">
+                        <span class="d-flex align-items-center">
+                            <img class="me-1" src="images/star.svg" alt="">
+                            <p>Мини-курс</p>
+                        </span>
+                        <img src="images/programs-1.jpg" />
+                    </div>
+                    <div class="text-box">
+                        <h3 class="m-0">
+                            Основы Python
+                        </h3>
+                        <span>12 уроков</span>
+                        <button>Записаться на курс</button>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a class="slide-box d-flex flex-column" href="#">
+                    <div class="img-box">
+                        <span class="d-flex align-items-center">
+                            <img class="me-1" src="images/star.svg" alt="">
+                            <p>Мини-курс</p>
+                        </span>
+                        <img src="images/programs-2.jpg" />
+                    </div>
+                    <div class="text-box">
+                        <h3 class="m-0">
+                            Что такое SQL и зачем он
+                        </h3>
+                        <span>12 уроков</span>
+                        <button>Записаться на курс</button>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a class="slide-box d-flex flex-column" href="#">
+                    <div class="img-box">
+                        <span class="d-flex align-items-center">
+                            <img class="me-1" src="images/star.svg" alt="">
+                            <p>Мини-курс</p>
+                        </span>
+                        <img src="images/programs-3.jpg" />
+                    </div>
+                    <div class="text-box">
+                        <h3 class="m-0">
+                            JavaScript с нуля реально ли изучить
+                        </h3>
+                        <span>12 уроков</span>
+                        <button>Записаться на курс</button>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a class="slide-box d-flex flex-column" href="#">
+                    <div class="img-box">
+                        <span class="d-flex align-items-center">
+                            <img class="me-1" src="images/star.svg" alt="">
+                            <p>Мини-курс</p>
+                        </span>
+                        <img src="images/programs-4.jpg" />
+                    </div>
+                    <div class="text-box">
+                        <h3 class="m-0">
+                            Что такое спортивное программирование?
+                        </h3>
+                        <button>Читать статью</button>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a class="slide-box d-flex flex-column" href="#">
+                    <div class="img-box">
+                        <span class="d-flex align-items-center">
+                            <img class="me-1" src="images/star.svg" alt="">
+                            <p>Статья</p>
+                        </span>
+                        <img src="images/programs-5.jpg" />
+                    </div>
+                    <div class="text-box">
+                        <h3 class="m-0">
+                            Какие проекты можно сделать на Java Junior
+                        </h3>
+                        <button>Читать статью</button>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a class="slide-box d-flex flex-column" href="#">
+                    <div class="img-box">
+                        <span class="d-flex align-items-center">
+                            <img class="me-1" src="images/star.svg" alt="">
+                            <p>Статья</p>
+                        </span>
+                        <img src="images/programs-6.jpg" />
+                    </div>
+                    <div class="text-box">
+                        <h3 class="m-0">
+                            Как составить резюме
+                        </h3>
+                        <button>Читать статью</button>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a class="slide-box d-flex flex-column" href="#">
+                    <div class="img-box">
+                        <span class="d-flex align-items-center">
+                            <img class="me-1" src="images/star.svg" alt="">
+                            <p>Статья</p>
+                        </span>
+                        <img src="images/programs-7.jpg" />
+                    </div>
+                    <div class="text-box">
+                        <h3 class="m-0">
+                            Как подготовиться к собеседованию
+                        </h3>
+                        <button>Читать статью</button>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a class="slide-box d-flex flex-column" href="#">
+                    <div class="img-box">
+                        <span class="d-flex align-items-center">
+                            <img class="me-1" src="images/star.svg" alt="">
+                            <p>Статья</p>
+                        </span>
+                        <img src="images/programs-8.jpg" />
+                    </div>
+                    <div class="text-box">
+                        <h3 class="m-0">
+                            Какую профессию IT выбрать
+                        </h3>
+                        <button>Читать статью</button>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a class="slide-box d-flex flex-column" href="#">
+                    <div class="img-box">
+                        <span class="d-flex align-items-center">
+                            <img class="me-1" src="images/star.svg" alt="">
+                            <p>Статья</p>
+                        </span>
+                        <img src="images/programs-9.jpg" />
+                    </div>
+                    <div class="text-box">
+                        <h3 class="m-0">
+                            Экспресс погружение в IT
+                        </h3>
+                        <span>12 уроков</span>
+                        <button>Записаться на курс</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="programs-navigation mx-auto d-none d-md-block">
+        <div class="swiper-button-next programs-next"></div>
+        <div class="swiper-button-prev programs-prev"></div>
+    </div>
+    </div>
+</section>
+<section class="profession" id="profession">
+    <div class="container">
+        <h2 class="section-title">Самые <span>востребованные</span> профессии</h2>
+        <div thumbsSlider="" class="swiper prof-nav-slider">
+            <div class="swiper-wrapper align-items-center flex-column flex-lg-row">
+                <div class="swiper-slide">
+                    <span class="d-flex align-items-center justify-content-center"><img class="me-1"
+                            src="images/star-2.svg" alt="">Популярные
+                        курсы</span>
+                </div>
+                <div class="swiper-slide">
+                    <span>IT с нуля</span>
+                </div>
+                <div class="swiper-slide">
+                    <span>Карьера и профессии</span>
+                </div>
+                <div class="swiper-slide">
+                    <span>Не могу определиться</span>
+                </div>
+            </div>
+        </div>
+        <div class="swiper prof-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <a class="item" href="#" style="background:url('images/prof-1.jpg')">
+                                <span class="d-flex align-items-center category">
+                                    <img class="me-1" src="images/star.svg" alt="">
+                                    Курс
+                                </span>
+                                <div class="text-box">
+                                    <h3>Спортивное программирование С++</h3>
+                                    <span>3 месяца</span>
+                                    <p>
+                                        Станьте мастером спортивного программирования на C++. Этот курс поможет вам овладеть навыками решения сложных алгоритмических задач и подготовиться к соревнованиям по программированию. Вы будете работать с реальными задачами, научитесь оптимизации кода и разовьете аналитическое мышление для быстрого и точного решения проблем.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <a class="item" href="#" style="background:url('images/prof-2.jpg')">
+                                <span class="d-flex align-items-center category">
+                                    <img class="me-1" src="images/star.svg" alt="">
+                                    Курс
+                                </span>
+                                <div class="text-box">
+                                    <h3>Java Junior разработчик</h3>
+                                    <span>5 месяцев</span>
+                                    <p>
+                                        Изучите основы и продвинутые аспекты разработки на Java. Курс охватывает все, от базовых принципов ООП до сложных архитектурных решений, включая работу с базами данных, фреймворками и многопоточностью. По окончании курса вы сможете создавать комплексные приложения на Java, работать с современными библиотеками и технологиями.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <a class="item" href="#" style="background:url('images/prof-3.jpg')">
+                                <span class="d-flex align-items-center category">
+                                    <img class="me-1" src="images/star.svg" alt="">
+                                    Курс
+                                </span>
+                                <div class="text-box">
+                                    <h3>
+                                        Python Junior разработчик
+                                    </h3>
+                                    <span>5 месяцев</span>
+                                    <p>
+                                        Полное погружение в мир Python для начинающих и продолжающих разработчиков. Курс охватывает основы языка, работу с данными, автоматизацию процессов и разработку веб-приложений. Вы научитесь разрабатывать гибкие и масштабируемые решения, используя Python для разных сфер, от анализа данных до веб-разработки и автоматизации.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <a class="item" href="#" style="background:url('images/prof-4.jpg')">
+                                <span class="d-flex align-items-center category">
+                                    <img class="me-1" src="images/star.svg" alt="">
+                                    Курс
+                                </span>
+                                <div class="text-box">
+                                    <h3>Блокчейн-разработка</h3>
+                                    <span>4 месяца</span>
+                                    <p>
+                                        Освойте блокчейн-разработку и создавайте инновационные децентрализованные приложения с нуля, используя самые современные технологии. Курс охватывает основные принципы работы с блокчейном, создание и развертывание смарт-контрактов, а также разработку приложений с использованием таких платформ, как Ethereum и Hyperledger.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <a class="item" href="#" style="background:url('images/prof-5.jpg')">
+                                <span class="d-flex align-items-center category">
+                                    <img class="me-1" src="images/star.svg" alt="">
+                                    Курс
+                                </span>
+                                <div class="text-box">
+                                    <h3>Искусственный интеллект</h3>
+                                    <span>3 месяца</span>
+                                    <p>
+                                        Овладейте технологиями искусственного интеллекта и машинного обучения для решения реальных задач. Вы научитесь разрабатывать модели машинного обучения, использовать нейронные сети, анализировать большие данные и внедрять интеллектуальные алгоритмы в свои проекты. Этот курс идеально подходит для тех, кто хочет развивать умные решения для практического применения.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <a class="item" href="#" style="background:url('images/prof-6.jpg')">
+                                <span class="d-flex align-items-center category">
+                                    <img class="me-1" src="images/star.svg" alt="">
+                                    Курс
+                                </span>
+                                <div class="text-box">
+                                    <h3>SQL </h3>
+                                    <span>3 месяца</span>
+                                    <p>
+                                        Изучите SQL с нуля и станьте экспертом в работе с базами данных. Курс охватывает все аспекты работы с реляционными базами данных, включая создание и оптимизацию запросов, управление данными, индексацию и оптимизацию производительности. Вы научитесь эффективно работать с базами данных, поддерживать высоконагруженные системы и решать реальные задачи в области анализа данных и администрирования баз данных
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <a class="item" href="#" style="background:url('images/prof-1.jpg')">
+                                <span class="d-flex align-items-center category">
+                                    <img class="me-1" src="images/star.svg" alt="">
+                                    Курс
+                                </span>
+                                <div class="text-box">
+                                    <h3>JavaScript разработчик</h3>
+                                    <span>5 месяцев</span>
+                                    <p>
+                                        Изучите все необходимые навыки для создания современных веб-приложений на JavaScript. Программа курса охватывает основы языка, фронтенд-разработку, работу с популярными фреймворками и библиотеками, такими как React и Vue, и переход от теории к практике на реальных проектах.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <a class="item" href="#" style="background:url('images/prof-2.jpg')">
+                                <span class="d-flex align-items-center category">
+                                    <img class="me-1" src="images/star.svg" alt="">
+                                    Курс
+                                </span>
+                                <div class="text-box">
+                                    <h3>PHP разработчик с нуля</h3>
+                                    <span>3 месяца</span>
+                                    <p>
+                                        Овладейте базовыми и продвинутыми навыками PHP-разработчика для создания, управления и оптимизации баз данных, а также для построения динамических веб-сайтов. Курс подойдёт для тех, кто хочет открыть для себя мир аналитики и разработки с PHP.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <a class="item" href="#" style="background:url('images/prof-3.jpg')">
+                                <span class="d-flex align-items-center category">
+                                    <img class="me-1" src="images/star.svg" alt="">
+                                    Курс
+                                </span>
+                                <div class="text-box">
+                                    <h3>Web - Дизайнер</h3>
+                                    <span>6 месяцев</span>
+                                    <p>
+                                        Узнайте, как создавать эстетически привлекательные сайты и уникальные веб-страницы, работая с реальными проектами. В курсе подробно рассматриваются дизайн интерфейсов, работа с графикой, принципы UX/UI, позволяя сформировать портфолио и развить креативное мышление.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <a class="item" href="#" style="background:url('images/prof-4.jpg')">
+                                <span class="d-flex align-items-center category">
+                                    <img class="me-1" src="images/star.svg" alt="">
+                                    Курс
+                                </span>
+                                <div class="text-box">
+                                    <h3>Нейросети для жизни</h3>
+                                    <span>3 месяцев</span>
+                                    <p>
+                                        Изучите, как нейросети могут ускорить выполнение задач и повысить продуктивность в 2 раза. Научитесь эффективно управлять проектами и брать на себя больше обязанностей, оптимизируя процессы с помощью искусственного интеллекта.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <a class="item" href="#" style="background:url('images/prof-5.jpg')">
+                                <span class="d-flex align-items-center category">
+                                    <img class="me-1" src="images/star.svg" alt="">
+                                    Курс
+                                </span>
+                                <div class="text-box">
+                                    <h3>C ++ разработчик </h3>
+                                    <span>5 месяцев</span>
+                                    <p>
+                                    Овладейте C++ для создания востребованных программных продуктов и приложений. Курс охватывает принципы ООП, работу с памятью, многопоточность и другие аспекты, необходимые для создания эффективных и высокопроизводительных программ. На выходе вы создадите проекты для своего портфолио.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <a class="item" href="#" style="background:url('images/prof-6.jpg')">
+                                <span class="d-flex align-items-center category">
+                                    <img class="me-1" src="images/star.svg" alt="">
+                                    Курс
+                                </span>
+                                <div class="text-box">
+                                    <h3>Дизайнер сайтов на Tilda</h3>
+                                    <span>2 месяца</span>
+                                    <p>
+                                        Превращайте свои идеи в реальные проекты с помощью платформы Tilda, создавайте яркие сайты и соберите профессиональное портфолио. Курс охватывает все, от принципов дизайна до навыков самостоятельного управления проектами.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <a class="item" href="#" style="background:url('images/prof-1.jpg')">
+                                <span class="d-flex align-items-center category">
+                                    <img class="me-1" src="images/star.svg" alt="">
+                                    Профессия
+                                </span>
+                                <div class="text-box">
+                                    <h3>TeamLead</h3>
+                                    <span>6 месяцев</span>
+                                    <p>
+                                        Станьте успешным TeamLead, овладев навыками управления командами, эффективного лидерства и развития сотрудников. Курс включает теорию и практику управления, методы мотивации и стратегического планирования, которые помогут вам стать продуктивным руководителем.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <a class="item" href="#" style="background:url('images/prof-2.jpg')">
+                                <span class="d-flex align-items-center category">
+                                    <img class="me-1" src="images/star.svg" alt="">
+                                    Профессия
+                                </span>
+                                <div class="text-box">
+                                    <h3>IT директор</h3>
+                                    <span>6 месяцев</span>
+                                    <p>
+                                         Изучите основы профессии IT-директора, получив ключевые навыки управления IT-подразделением и стратегического планирования. Курс включает практические кейсы и проекты, позволяя овладеть искусством эффективного управления и принятия стратегических решений.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <a class="item" href="#" style="background:url('images/prof-3.jpg')">
+                                <span class="d-flex align-items-center category">
+                                    <img class="me-1" src="images/star.svg" alt="">
+                                    Профессия
+                                </span>
+                                <div class="text-box">
+                                    <h3>Архитектор ПО</h3>
+                                    <span>6 месяцев</span>
+                                    <p>
+                                        Овладейте принципами проектирования программных систем и разработкой архитектурных решений. Курс включает проектирование высоконагруженных систем, выбор технологий и подходов, позволяя вам стать уверенным архитектором в сфере разработки программного обеспечения.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <a class="item" href="#" style="background:url('images/prof-4.jpg')">
+                                <span class="d-flex align-items-center category">
+                                    <img class="me-1" src="images/star.svg" alt="">
+                                    Профессия
+                                </span>
+                                <div class="text-box">
+                                    <h3>Продакт-менеджер (Product Manager)</h3>
+                                    <span>2 месяца</span>
+                                    <p>
+                                        Научитесь управлять разработкой продуктов, анализировать потребности пользователей и следить за рыночными трендами. В курсе рассматриваются этапы создания продукта, принципы работы с командой и особенности ведения продукта от идеи до запуска на рынок.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <a class="item" href="#" style="background:url('images/prof-5.jpg')">
+                                <span class="d-flex align-items-center category">
+                                    <img class="me-1" src="images/star.svg" alt="">
+                                    Профессия
+                                </span>
+                                <div class="text-box">
+                                    <h3>Проджект IT проекта</h3>
+                                    <span>6 месяцев</span>
+                                    <p>
+                                        Изучите все аспекты управления IT-проектами, включая планирование, распределение ресурсов и контроль качества. Курс позволит вам развить навыки эффективного управления проектами и использовать стратегии для успешного выполнения задач в условиях жесткой конкуренции.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <a class="item" href="#" style="background:url('images/prof-6.jpg')">
+                                <span class="d-flex align-items-center category">
+                                    <img class="me-1" src="images/star.svg" alt="">
+                                    Профессия
+                                </span>
+                                <div class="text-box">
+                                    <h3>Mini MBA</h3>
+                                    <span>6 месяцев</span>
+                                    <p>
+                                        Получите знания и навыки, эквивалентные уровню Mini MBA, которые помогут вам уверенно вести бизнес и принимать стратегически важные решения. В программе курса — управление проектами, финансовое планирование, стратегия и лидерство в условиях неопределенности.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <a class="item" href="#" style="background:url('images/prof-1.jpg')">
+                                <span class="d-flex align-items-center category">
+                                    <img class="me-1" src="images/star.svg" alt="">
+                                    Профессия
+                                </span>
+                                <div class="text-box">
+                                    <h3>Phyton-разработчик</h3>
+                                    <span>12 месяцев</span>
+                                    <p>
+                                        Вы освоите самый востребованный язык программирования, на котором пишут
+                                        сайты,
+                                        приложения, игры и чат-боты. Сделаете 3 проекта в портфолио, а центр карьеры
+                                        поможет
+                                        найти работу
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="btn d-none mx-auto d-lg-flex align-items-center justify-content-center" href="#">
+            <p class="my-0">Смотреть всё</p>
+            <svg class="icon">
+                <use xlink:href="images/sprite.svg#arrow"></use>
+            </svg>
+        </a>
+    </div>
+</section>
+<section class="awesome">
+    <div class="container">
+        <h2 class="section-title">Самые востребованные профессии
+            и <span>самые большие</span> зарплаты</h2>
+        <div class="row align-items-center top-content">
+            <div class="col-12 col-lg-6  order-2 order-lg-1">
+                <h3>Куда пойти в IT?</h3>
+                <p>Поможем выбрать интересное вам направление за 10 минут</p>
+                <a class="btn" href="#footer">
+                    <p>Пройти тест</p>
+                </a>
+            </div>
+            <div class="col-12 col-lg-6 order-1 order-lg-2">
+                <div class="img-box">
+                    <img src="images/awesome.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row bottom-content">
+            <div class="col-12 col-md-6 col-xxl-4 d-flex flex-column">
+                <a class="item d-flex flex-column mt-auto" href="#">
+                    <h4>От 350 000 ₽</h4>
+                    <img class="d-block mx-auto" src="images/awesome-block-1.png" alt="">
+                    <span class="d-flex align-items-center">
+                        <img class="hh" src="images/hh.svg" alt="">
+                        381 вакансия
+                    </span>
+                    <b>IT директор</b>
+                    <p>Руководитель команды </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-xxl-4 d-flex flex-column">
+                <a class="item d-flex flex-column mt-auto" href="#">
+                    <h4 class="mb-auto">От 110 000 ₽</h4>
+                    <span class="d-flex align-items-center">
+                        <img class="hh" src="images/hh.svg" alt="">
+                        2889 вакансий
+                    </span>
+                    <b>Python разработчик</b>
+                    <p>Разработка программного обеспечения</p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-xxl-4 d-flex flex-column">
+                <a class="item d-flex flex-column mt-auto" href="#">
+                    <h4 class="mb-auto">От 100 000 ₽</h4>
+                    <span class="d-flex align-items-center">
+                        <img class="hh" src="images/hh.svg" alt="">
+                        537 вакансий
+                    </span>
+                    <b>Web-дизайнер</b>
+                    <p>Дизайн сайтов и графичских иллюстраций</p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-xxl-4 d-flex flex-column">
+                <a class="item d-flex flex-column mt-auto" href="#">
+                    <h4 class="mb-auto">От 150 000 ₽</h4>
+                    <span class="d-flex align-items-center">
+                        <img class="hh" src="images/hh.svg" alt="">
+                        2 166 ваканси
+                    </span>
+                    <b>Java разработчик</b>
+                    <p>Разработка программного обеспечения</p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-xxl-4 d-flex flex-column">
+                <a class="item d-flex flex-column mt-auto" href="#">
+                    <h4 class="mb-auto">От 160 000 ₽</h4>
+                    <span class="d-flex align-items-center">
+                        <img class="hh" src="images/hh.svg" alt="">
+                        5 462 вакансии
+                    </span>
+                    <b>SQL разработчик</b>
+                    <p>Разработка программного обеспечения</p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-xxl-4 d-flex flex-column d-flex">
+                <a class="item d-flex flex-column mt-auto" href="#">
+                    <h4 class="mb-auto">От 300 000 ₽</h4>
+                    <img src="images/awesome-block-2.png" alt="">
+                    <span class="d-flex align-items-center">
+                        <img class="hh" src="images/hh.svg" alt="">
+                        966 вакансий
+                    </span>
+                    <b>TeamLead</b>
+                    <p>Руководитель команды разработчиков</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="reviews">
+    <div class="container">
+        <h2 class="section-title"><span>Отзывы</span><br class="d-none d-lg-inline">
+            <p>о наших курсах</p>
+        </h2>
+        <p class="mx-auto">Нам важно, чтобы вы приняли взвешенное решение об обучении на платформе. Поэтому мы собрали
+            для вас честные
+            мнения пользователей GeniumLab — так вы сможете оценить все плюсы и минусы и найдёте ответы на волнующие
+            вопросы.
+        </p>
+        <div class="swiper reviews-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="item" style="background-color:var(--primary-04);">
+                        <div class="row m-0 flex-column flex-lg-row">
+                            <div class="col-12 col-lg-4 p-0 mx-auto d-flex justify-content-center d-lg-block">
+                                <div class="img-box">
+                                    <img src="images/reviews-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8 p-0">
+                                <div class="text-box d-flex flex-column">
+                                    <span class="curs">
+                                        Курс “Python-разработчик”
+                                    </span>
+                                    <span class="name d-flex align-items-center flex-column flex-lg-row">
+                                        Мария Коваль
+                                        <img src="images/stars.svg" alt="">
+                                    </span>
+                                    <p>
+                                        Никогда не думала, что смогу программировать! 🤩 Этот курс по Python — просто
+                                        чудо. Все так доступно объясняли, что даже сложные вещи стали понятными. Много
+                                        практики, кейсов — огонь! 🔥 Теперь я уверенно иду в программисты. Спасибо
+                                        огромное! 🚀
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item" style="background-color:var(--primary-02);">
+                        <div class="row m-0 flex-column flex-lg-row">
+                            <div class="col-12 col-lg-4 p-0 mx-auto d-flex justify-content-center d-lg-block">
+                                <div class="img-box">
+                                    <img src="images/reviews-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8 p-0">
+                                <div class="text-box d-flex flex-column">
+                                    <span class="curs">
+                                        Курс “UX/UI-дизайнер”
+                                    </span>
+                                    <span class="name d-flex align-items-center flex-column flex-lg-row">
+                                        Корнева Ирина
+                                        <img src="images/stars.svg" alt="">
+                                    </span>
+                                    <p>
+                                        Курс UX/UI в GeniumLab? Это не курс, а ракета! 🚀 Столько практики, что руки
+                                        отваливались (в хорошем смысле!). Задания — огонь 🔥. Научилась не только делать
+                                        красивые картинки, но и понимать, как люди думают - как опытный археолог
+                                        раскапывает древний город, только вместо артефактов — потребности юзеров!
+                                        Рекомендую всем!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item" style="background-color:var(--grayscale-05);">
+                        <div class="row m-0 flex-column flex-lg-row">
+                            <div class="col-12 col-lg-4 p-0 mx-auto d-flex justify-content-center d-lg-block">
+                                <div class="img-box">
+                                    <img src="images/reviews-3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8 p-0">
+                                <div class="text-box d-flex flex-column">
+                                    <span class="curs">
+                                        Курс “TeamLead”
+                                    </span>
+                                    <span class="name d-flex align-items-center flex-column flex-lg-row">
+                                        Волгин Павел
+                                        <img src="images/stars.svg" alt="">
+                                    </span>
+                                    <p>
+                                        Не ожидал такого! Преподаватели — реально профи, не книжные теоретики, а
+                                        практики из крупных IT-компаний. Их советы — огонь! 🔥 Практические задания на
+                                        реальных кейсах — суперполезно! Научился решать сложные задачи. И бонус —
+                                        классная тусовка единомышленников! Общались, обменивались опытом, поддерживали
+                                        друг друга.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item" style="background-color: #5A896E;">
+                        <div class="row m-0 flex-column flex-lg-row">
+                            <div class="col-12 col-lg-4 p-0 mx-auto d-flex justify-content-center d-lg-block">
+                                <div class="img-box">
+                                    <img src="images/reviews-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8 p-0">
+                                <div class="text-box d-flex flex-column">
+                                    <span class="curs">
+                                        Курс “SQL разработчик с нуля”
+                                    </span>
+                                    <span class="name d-flex align-items-center flex-column flex-lg-row">
+                                        Пяткина Яна
+                                        <img src="images/stars.svg" alt="">
+                                    </span>
+                                    <p>
+                                        Базы данных? Раньше думала, что это скучно, как смотреть краску, как она сохнет!
+                                        😴 А тут — огонь! 🔥 Владислав — преподаватель от Бога! Объясняет так, что все
+                                        понятно, даже мне, гуманитарию! 😂 Много практики, проекты — просто бомба! 💣
+                                        Центр карьеры — тоже молодцы! Резюме, подготовка к собеседованиям — даже не
+                                        думала!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item" style="background-color: #999999;">
+                        <div class="row m-0 flex-column flex-lg-row">
+                            <div class="col-12 col-lg-4 p-0 mx-auto d-flex justify-content-center d-lg-block">
+                                <div class="img-box">
+                                    <img src="images/reviews-5.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8 p-0">
+                                <div class="text-box d-flex flex-column">
+                                    <span class="curs">
+                                        Курс “PHP-разработчик с нуля”
+                                    </span>
+                                    <span class="name d-flex align-items-center flex-column flex-lg-row">
+                                        Алексей Громов
+                                        <img src="images/stars.svg" alt="">
+                                    </span>
+                                    <p>
+                                        Вау! 🤩 Курс — бомба! Всё понятно, преподаватели объясняют на пальцах, с нуля до
+                                        полноценных программ на PHP — дошло очень быстро. Много практики, реальные
+                                        проекты — это круто Теперь чувствую себя профи и уже нашел стажировку! 🥳
+                                        Рекомендую.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item" style="background-color: #5782C0;">
+                        <div class="row m-0 flex-column flex-lg-row">
+                            <div class="col-12 col-lg-4 p-0 mx-auto d-flex justify-content-center d-lg-block">
+                                <div class="img-box">
+                                    <img src="images/reviews-6.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8 p-0">
+                                <div class="text-box d-flex flex-column">
+                                    <span class="curs">
+                                        Курс “Спортивное программирование”
+                                    </span>
+                                    <span class="name d-flex align-items-center flex-column flex-lg-row">
+                                        Дмитрий Смирнов
+                                        <img src="images/stars.svg" alt="">
+                                    </span>
+                                    <p>
+                                        Спортивное программирование на C++" – это как покорение Эвереста для
+                                        программистов! 🏔 Я пришёл с базовыми знаниями, а закончил с навыками, которые
+                                        делают меня настоящим кодовым супергероем! 🦸‍♂️ Теперь, вместо того чтобы
+                                        застревать в офисном трафике, я пишу код в уютной домашней обстановке в пижаме.
+                                        😄🏡
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item" style="background-color: #9789D2;">
+                        <div class="row m-0 flex-column flex-lg-row">
+                            <div class="col-12 col-lg-4 p-0 mx-auto d-flex justify-content-center d-lg-block">
+                                <div class="img-box">
+                                    <img src="images/reviews-7.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8 p-0">
+                                <div class="text-box d-flex flex-column">
+                                    <span class="curs">
+                                        Курс “Дизайнер сайтов на Tilda”
+                                    </span>
+                                    <span class="name d-flex align-items-center flex-column flex-lg-row">
+                                        Скороходова Ольга
+                                        <img src="images/stars.svg" alt="">
+                                    </span>
+                                    <p>
+                                        Материала — тонна, все жутко понятно, как будто волшебник все объяснил! ✨
+                                        Домашние задания — просто песня! Сделала свой первый сайт — горжусь как слон!
+                                        🐘 Центр карьеры — отдельное спасибо! Помогли с резюме, подготовили к
+                                        собеседованиям — теперь я готова покорять мир дизайна! 💪
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item" style="background-color: #BDC1D2;">
+                        <div class="row m-0 flex-column flex-lg-row">
+                            <div class="col-12 col-lg-4 p-0 mx-auto d-flex justify-content-center d-lg-block">
+                                <div class="img-box">
+                                    <img src="images/reviews-8.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8 p-0">
+                                <div class="text-box d-flex flex-column">
+                                    <span class="curs">
+                                        Курс “Искусственный интеллект”
+                                    </span>
+                                    <span class="name d-flex align-items-center flex-column flex-lg-row">
+                                        Виктор Исаев
+                                        <img src="images/stars.svg" alt="">
+                                    </span>
+                                    <p>
+                                        "Курс по искусственному интеллекту превзошел все мои ожидания! Мои проекты
+                                        теперь в портфолио! 😎 Отличный старт в работе с ИИ.Рекомендую! 👍
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item" style="background-color: #78AB8E;">
+                        <div class="row m-0 flex-column flex-lg-row">
+                            <div class="col-12 col-lg-4 p-0 mx-auto d-flex justify-content-center d-lg-block">
+                                <div class="img-box">
+                                    <img src="images/reviews-9.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8 p-0">
+                                <div class="text-box d-flex flex-column">
+                                    <span class="curs">
+                                        Курс “Java разработчик с нуля”
+                                    </span>
+                                    <span class="name d-flex align-items-center flex-column flex-lg-row">
+                                        Крупинин Игорь
+                                        <img src="images/stars.svg" alt="">
+                                    </span>
+                                    <p>
+                                        Мне как новичку было важно одно - смогу ли я. Но всё объясняют так, что даже моя
+                                        бабушка бы поняла (а она телевизор порой включить не может!). Преподаватели —
+                                        лучшие! Всегда помогут, ответят на любой, даже самый глупый вопрос (я проверял!
+                                        😉). Практики — куча! Писал код как одержимый, проекты получились реально
+                                        крутые! 💪 Теперь я — почти гуру Java! 😎
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item" style="background-color: #858585;">
+                        <div class="row m-0 flex-column flex-lg-row">
+                            <div class="col-12 col-lg-4 p-0 mx-auto d-flex justify-content-center d-lg-block">
+                                <div class="img-box">
+                                    <img src="images/reviews-10.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8 p-0">
+                                <div class="text-box d-flex flex-column">
+                                    <span class="curs">
+                                        Курс “Тильда с нуля”
+                                    </span>
+                                    <span class="name d-flex align-items-center flex-column flex-lg-row">
+                                        Мария Николаева
+                                        <img src="images/stars.svg" alt="">
+                                    </span>
+                                    <p>
+                                        Курс по Tilda - просто бомба! 🤯 Я, как застрявший в прошлом веке динозавр, с
+                                        нуля научилась делать сайты! 🚀 Теперь у меня есть собственный шедевр, который я
+                                        могу показать всему миру, и это не мое фото в контакте! 😂 Особенно радует, что
+                                        у меня теперь есть возможность перейти на удаленку и работать в пижаме, как я
+                                        мечтала. 🏝️
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-navigation mx-auto d-none d-lg-block">
+                <div class="swiper-button-next reviews-next"></div>
+                <div class="swiper-button-prev reviews-prev"></div>
+            </div>
+        </div>
+</section>
+<section class="result">
+    <div class="container">
+        <h2 class="section-title">Путь к результату будет <br>
+            <span>быстрее</span> и легче
+        </h2>
+        <div class="slider mx-auto d-none d-lg-block">
+            <div thumbsSlider="" class="swiper result-nav-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <span class="d-flex align-items-center justify-content-center"><img class="me-1"
+                                src="images/star-2.svg" alt="">Центр карьеры</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>Практика и проекты</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>Сообщество</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>Гарантии</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper result-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="row align-items-center">
+                            <div class="col-5 col-xxl-4">
+                                <div class="text-box">
+                                    <h3>Собеседование нервирует?</h3>
+                                    <p>Не переживай, мы подготовим тебя на 101%
+                                        С нашими карьерными консультациями ты не заблудишься! Мы поможем тебе
+                                        подготовить
+                                        сильное резюме, собрать профессиональное портфолио и подготовиться к
+                                        собеседованию.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-7 col-xxl-8 pe-0">
+                                <div class="img-box">
+                                    <img src="images/result-1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row align-items-center">
+                            <div class="col-5 col-xxl-4">
+                                <div class="text-box">
+                                    <h3>Учись у лучших!</h3>
+                                    <p>Прокачай свои навыки на реальных проектах. После окончания курса ты будешь
+                                        разбираться в теме и у тебя будет портфолио, которое можно показать
+                                        работодателю.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-7 col-xxl-8 pe-0">
+                                <div class="img-box">
+                                    <img src="images/result-2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row align-items-center">
+                            <div class="col-5 col-xxl-4">
+                                <div class="text-box">
+                                    <h3>Поддержим тебя в любом начинании!</h3>
+                                    <p>Лучше учиться вместе. Присоединяйся к нашему сообществу, обменивайся опытом,
+                                        советами и идеями с единомышленниками.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-7 col-xxl-8 pe-0">
+                                <div class="img-box">
+                                    <img src="images/result-3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row align-items-center">
+                            <div class="col-10 mx-auto">
+                                <div class="row cols">
+                                    <div class="col-6 col-lg-4">
+                                        <div class="item d-flex flex-column">
+                                            <div class="icon-box">
+                                                <img src="images/result-icon-1.png" alt="">
+                                            </div>
+                                            <h4>Даже твоя бабушка сможет разобраться</h4>
+                                            <p>Объясняем понятно и простым языком</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4">
+                                        <div class="item d-flex flex-column">
+                                            <div class="icon-box">
+                                                <img src="images/result-icon-2.png" alt="">
+                                            </div>
+                                            <h4>80% практики и 20% теории</h4>
+                                            <p>Устали от теории? Мы построили обучение на практике и интересных примерах
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4">
+                                        <div class="item d-flex flex-column">
+                                            <div class="icon-box">
+                                                <img src="images/result-icon-3.png" alt="">
+                                            </div>
+                                            <h4>Секретное оружие IT-GPS навигация</h4>
+                                            <p>Ты не потеряешься в мире IT - наша поддержка будет, как карты с GPS
+                                                навигацией</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-result d-lg-none">
+            <div class="accordion-item">
+                <h4 class="accordion-header d-flex align-items-center justify-content-between">Центр карьеры
+                    <span class="accordion-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.53 9.21979L18.002 14.6929L16.9412 15.7534L11.9996 10.8108L7.05797 15.7534L5.99721 14.6929L11.4692 9.21979C11.6099 9.07911 11.8006 9.00007 11.9996 9.00007C12.1985 9.00007 12.3893 9.07911 12.53 9.21979Z"
+                                fill="#1F222E" />
+                        </svg>
+                    </span>
+                </h4>
+
+                <div class="accordion-content">
+                    <h3>Собеседование нервирует?</h3>
+                    <p>Не переживай, мы подготовим тебя на 101%!
+                        С нашими карьерными консультациями ты не заблудишься! Мы поможем тебе подготовить сильное
+                        резюме, собрать профессиональное портфолио и подготовиться к собеседованию.
+                    </p>
+                    <div class="img-box">
+                        <img src="images/result-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h4 class="accordion-header d-flex align-items-center justify-content-between">Практика и проекты
+                    <span class="accordion-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.53 9.21979L18.002 14.6929L16.9412 15.7534L11.9996 10.8108L7.05797 15.7534L5.99721 14.6929L11.4692 9.21979C11.6099 9.07911 11.8006 9.00007 11.9996 9.00007C12.1985 9.00007 12.3893 9.07911 12.53 9.21979Z"
+                                fill="#1F222E" />
+                        </svg>
+                    </span>
+                </h4>
+
+                <div class="accordion-content">
+                    <h3>Учись у лучших!</h3>
+                    <p>
+                        Прокачай свои навыки на реальных проектах. После окончания курса ты будешь разбираться в теме и
+                        у тебя будет портфолио, которое можно показать работодателю.
+                    </p>
+                    <div class="img-box">
+                        <img src="images/result-2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h4 class="accordion-header d-flex align-items-center justify-content-between">Сообщество
+                    <span class="accordion-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.53 9.21979L18.002 14.6929L16.9412 15.7534L11.9996 10.8108L7.05797 15.7534L5.99721 14.6929L11.4692 9.21979C11.6099 9.07911 11.8006 9.00007 11.9996 9.00007C12.1985 9.00007 12.3893 9.07911 12.53 9.21979Z"
+                                fill="#1F222E" />
+                        </svg>
+                    </span>
+                </h4>
+
+                <div class="accordion-content">
+                    <h3>Поддержим тебя в любом начинании!</h3>
+                    <p>
+                        Лучше учиться вместе. Присоединяйся к нашему сообществу, обменивайся опытом, советами и идеями с
+                        единомышленниками.
+                    </p>
+                    <div class="img-box">
+                        <img src="images/result-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h4 class="accordion-header d-flex align-items-center justify-content-between">Гарантии
+                    <span class="accordion-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.53 9.21979L18.002 14.6929L16.9412 15.7534L11.9996 10.8108L7.05797 15.7534L5.99721 14.6929L11.4692 9.21979C11.6099 9.07911 11.8006 9.00007 11.9996 9.00007C12.1985 9.00007 12.3893 9.07911 12.53 9.21979Z"
+                                fill="#1F222E" />
+                        </svg>
+                    </span>
+                </h4>
+
+                <div class="accordion-content">
+                    <div class="row cols">
+                        <div class="col-6">
+                            <div class="item d-flex flex-column">
+                                <div class="icon-box">
+                                    <img src="images/result-icon-1.png" alt="">
+                                </div>
+                                <h4>Даже твоя бабушка сможет разобраться</h4>
+                                <p>Объясняем понятно и простым языком</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="item d-flex flex-column">
+                                <div class="icon-box">
+                                    <img src="images/result-icon-2.png" alt="">
+                                </div>
+                                <h4>80% практики и 20% теории</h4>
+                                <p>Устали от теории? Мы построили обучение на практике и интересных примерах
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="item d-flex flex-column">
+                                <div class="icon-box">
+                                    <img src="images/result-icon-3.png" alt="">
+                                </div>
+                                <h4>Секретное оружие IT-GPS навигация</h4>
+                                <p>Ты не потеряешься в мире IT - наша поддержка будет, как карты с GPS
+                                    навигацией</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="footer">
+    <div class="container">
+        <div class="form-box">
+            <div class="footer-form">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <h2>Откройте новые возможности с GeniumLab</h2>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <p>Наши менеджеры помогут выбрать направление, расскажут о форматах и программах обучения</p>
+                    </div>
+                </div>
+                <form action="/submit" method="post">
+                    <div class="row flex-column flex-lg-row justify-content-between">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Имя" required>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Телефон" required>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required>
+                        <input type="text" class="form-control d-lg-none" id="telegram" name="telegram"
+                            placeholder="@Telegram" required>
+                        <button class="btn" type="submit">
+                            <p>Оставить заявку</p>
+                        </button>
+                    </div>
+                    <div class="checkbox-group d-flex align-items-center">
+                        <input type="checkbox" id="accept-terms" name="accept-terms" required>
+                        <label for="accept-terms"> <span>Принимаю условия <a href="#">оферты</a> и согласен на <a
+                                    href="#">обработку персональных данных</a></span></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row flex-column flex-lg-row contacts">
+            <div class="col-12 col-lg-4 col-xxl-5">
+                <a class="logo" href="#">
+                    <img src="images/logo-2.svg" alt="">
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 col-xxl-3">
+                <a class="tel mx-auto" href="tel:+78007006840">+7 800 700-68-40</a>
+            </div>
+            <div class="col-12 col-lg-4 col-xxl-3">
+                <a class="email mx-auto" href="mailto:geniumlab@yandex.ru">geniumlab@yandex.ru</a>
+            </div>
+            <div class="col-12 col-xxl-1 d-flex">
+                <div class="social d-flex ms-lg-auto">
+                    <a href="#"><img src="images/vk.svg" alt=""></a>
+                    <a href="#"><img src="images/telegram.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="row links d-none d-lg-flex">
+            <div class="col-5">
+                <h2 class="accordion-header">Направления</h2>
+                <div class="accordion-content">
+                    <ul class="row px-0">
+                        <li class="col-6">
+                            <ul>
+                                <li><a href="#">Начать бесплатно</a></li>
+                                <li><a href="#">Профессии</a></li>
+                                <li><a href="#">Программирование</a></li>
+                                <li><a href="#">Бэкенд-разработка</a></li>
+                                <li><a href="#">Фронтенд-разработка</a></li>
+                                <li><a href="#">Мобильная разработка</a></li>
+                                <li><a href="#">Блокчейн-разработка</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-6">
+                            <ul>
+                                <li><a href="#">Искусственный интеллект</a></li>
+                                <li><a href="#">Создание игр</a></li>
+                                <li><a href="#">Дизайн</a></li>
+                                <li><a href="#">Все курсы</a></li>
+                                <li><a href="#">Перспективные направления</a></li>
+                                <li><a href="#">Корпоративным клиентам</a></li>
+                                <li><a href="#">Для детей</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-7">
+                <div class="row">
+                    <div class="col-12 col-xxl-6">
+                        <h2 class="accordion-header">Правовая информация</h2>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><a href="#">Оферта</a></li>
+                                <li><a href="#">Политика обработки персональных данных</a></li>
+                                <li><a href="#">Согласие на обработку персональных данных</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 mt-5 mt-xxl-0">
+                        <div class="row justify-content-between">
+                            <div class="col-xxl-6">
+                                <h2 class="accordion-header">О школе</h2>
+                                <div class="accordion-content">
+                                    <ul>
+                                        <li><a href="#">Контакты</a></li>
+                                        <li><a href="https://vk.com/geniumlab_vacanci">Вакансии</a></li>
+                                        <li><a href="#">Школа кураторов</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex flex-column last">
+                                <h2 class="accordion-header">Меню</h2>
+                                <div class="accordion-content">
+                                    <ul>
+                                        <li><a class="d-flex align-items-center" href="#">Для детей <img class="kids"
+                                                    src="images/kids.svg" alt=""></a></li>
+                                        <li><a href="#">Бесплатно</a></li>
+                                        <li><a href="#">О школе</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 mt-5 mt-xxl-0">
+                        <h2 class="accordion-header">Реквизиты</h2>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>ИП Петухов Дмитрий Геннадьевич</li>
+                                <li>ИНН: 618800174081</li>
+                                <li>ОГРНИП 322619600034063</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-footer d-block d-lg-none">
+            <div class="accordion-item">
+                <h2 class="accordion-header d-flex align-items-center justify-content-between">Направления
+                    <svg class="accordion-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.4692 15.534L5.99719 10.0609L7.05796 9.00037L11.9996 13.9429L16.9412 9.00037L18.0019 10.0609L12.5299 15.534C12.3893 15.6747 12.1985 15.7537 11.9996 15.7537C11.8006 15.7537 11.6098 15.6747 11.4692 15.534Z"
+                            fill="white" />
+                    </svg>
+                </h2>
+                <div class="accordion-content">
+                    <ul>
+                        <li><a href="#">Начать бесплатно</a></li>
+                        <li><a href="#">Профессии</a></li>
+                        <li><a href="#">Программирование</a></li>
+                        <li><a href="#">Бэкенд-разработка</a></li>
+                        <li><a href="#">Фронтенд-разработка</a></li>
+                        <li><a href="#">Мобильная разработка</a></li>
+                        <li><a href="#">Блокчейн-разработка</a></li>
+                        <li><a href="#">Искусственный интеллект</a></li>
+                        <li><a href="#">Создание игр</a></li>
+                        <li><a href="#">Дизайн</a></li>
+                        <li><a href="#">Все курсы</a></li>
+                        <li><a href="#">Перспективные направления</a></li>
+                        <li><a href="#">Корпоративным клиентам</a></li>
+                        <li><a href="#">Для детей</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header d-flex align-items-center justify-content-between">Правовая информация
+                    <svg class="accordion-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.4692 15.534L5.99719 10.0609L7.05796 9.00037L11.9996 13.9429L16.9412 9.00037L18.0019 10.0609L12.5299 15.534C12.3893 15.6747 12.1985 15.7537 11.9996 15.7537C11.8006 15.7537 11.6098 15.6747 11.4692 15.534Z"
+                            fill="white" />
+                    </svg>
+                </h2>
+                <div class="accordion-content">
+                    <ul>
+                        <li><a href="#">Оферта</a></li>
+                        <li><a href="#">Политика обработки персональных данных</a></li>
+                        <li><a href="#">Согласие на обработку персональных данных</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header d-flex align-items-center justify-content-between">О школе
+                    <svg class="accordion-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.4692 15.534L5.99719 10.0609L7.05796 9.00037L11.9996 13.9429L16.9412 9.00037L18.0019 10.0609L12.5299 15.534C12.3893 15.6747 12.1985 15.7537 11.9996 15.7537C11.8006 15.7537 11.6098 15.6747 11.4692 15.534Z"
+                            fill="white" />
+                    </svg>
+                </h2>
+                <div class="accordion-content">
+                    <ul>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Школа кураторов</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header d-flex align-items-center justify-content-between">Меню
+                    <svg class="accordion-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.4692 15.534L5.99719 10.0609L7.05796 9.00037L11.9996 13.9429L16.9412 9.00037L18.0019 10.0609L12.5299 15.534C12.3893 15.6747 12.1985 15.7537 11.9996 15.7537C11.8006 15.7537 11.6098 15.6747 11.4692 15.534Z"
+                            fill="white" />
+                    </svg>
+                </h2>
+                <div class="accordion-content">
+                    <ul>
+                        <li><a class="d-flex align-items-center" href="#">Для детей <img class="kids"
+                                    src="images/kids.svg" alt=""></a></li>
+                        <li><a href="#">Бесплатно</a></li>
+                        <li><a href="#">О школе</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header d-flex align-items-center justify-content-between">Реквизиты
+                    <svg class="accordion-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.4692 15.534L5.99719 10.0609L7.05796 9.00037L11.9996 13.9429L16.9412 9.00037L18.0019 10.0609L12.5299 15.534C12.3893 15.6747 12.1985 15.7537 11.9996 15.7537C11.8006 15.7537 11.6098 15.6747 11.4692 15.534Z"
+                            fill="white" />
+                    </svg>
+                </h2>
+                <div class="accordion-content">
+                    <ul>
+                        <li>ИП Петухов Дмитрий Геннадьевич</li>
+                        <li>ИНН: 618800174081</li>
+                        <li>ОГРНИП 322619600034063</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row social-links">
+            <div class="col-12 col-lg-5 mb-4 mb-lg-0">
+                <h2>Есть вопрос или предложение?</h2>
+                <p>Напишите нам! Мы с радостью ответим на все ваши вопросы и предложения</p>
+            </div>
+            <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                <h2 class="d-flex align-items-center"><img src="images/telegram.svg" alt="">Telegram</h2>
+                <p>Хочу записаться на бесплатное занятие. Вопросы по выбору и оплате курсов</p>
+            </div>
+            <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                <h2 class="d-flex align-items-center"><img src="images/telegram.svg" alt="">Telegram</h2>
+                <p>Я уже учусь, вопрос по обучению</p>
+            </div>
+        </div>
+        <span class="cookie">Мы <u>используем файлы Cookie ,</u> для персонализации сервисов и повышения удобства
+            пользования сайтом. Если вы не согласны на их использование, поменяйте настройки браузера.</span>
+</footer>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col-6 ps-0">
+                    <form class="search-form d-flex align-items-center">
+                        <button type="submit">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17Z"
+                                    stroke="#9EA4BE" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21 21L15 15" stroke="#9EA4BE" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <input type="text" placeholder="Профессия или навык" />
+                    </form>
+                    <div class="links-modal">
+                        <ul>
+                            <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt="">
+                                    Бэкенд-разработка</a></li>
+                            <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt="">
+                                    Профессии</a></li>
+                            <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt="">
+                                    Искусственный интеллект</a></li>
+                            <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt="">
+                                    Блокчейн
+                                    разработка</a></li>
+                            <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt="">
+                                    Фронтенд-разработка</a></li>
+                            <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt="">
+                                    Мобильная
+                                    разработка</a></li>
+                            <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt="">
+                                    Тестирование</a></li>
+                        </ul>
+                        <ul>
+                            <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt="">
+                                    Администрирование</a></li>
+                            <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt="">
+                                    Создание
+                                    игр</a></li>
+                            <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt="">
+                                    Дизайн</a>
+                            </li>
+                            <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt="">
+                                    Корпоративным клиентам</a></li>
+                            <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt=""> Будь в
+                                    тренде</a></li>
+                            <li><a class="d-flex align-items-center" href="#"> <img src="images/cube.svg" alt=""> Начать
+                                    бесплатно</a></li>
+                            <li><a class="d-flex align-items-center" href="#"> <img src="images/cubs.svg" alt=""> Все
+                                    курсы</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 pe-0">
+                    <div class="slider">
+                        <div class="header-slider d-flex align-items-center justify-content-between">
+                            <h5>Популярное</h5>
+                            <div class="modal-navigation">
+                                <div class="swiper-button-next modal-next"></div>
+                                <div class="swiper-button-prev modal-prev"></div>
+                            </div>
+                        </div>
+                        <div class="swiper modal-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul class="d-flex flex-column">
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png"
+                                                            alt="">Python-разработчик</a>
+                                                </li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">Java-разработчик</a>
+                                                </li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">Блокчейн-разработка
+                                                        для
+                                                        начинающих</a></li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">ChatGpt</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul class="d-flex flex-column">
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png"
+                                                            alt="">Python-разработчик</a>
+                                                </li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">Java-разработчик</a>
+                                                </li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">Блокчейн-разработка
+                                                        для
+                                                        начинающих</a></li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">ChatGpt</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul class="d-flex flex-column">
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png"
+                                                            alt="">Python-разработчик</a>
+                                                </li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">Java-разработчик</a>
+                                                </li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">Блокчейн-разработка
+                                                        для
+                                                        начинающих</a></li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">ChatGpt</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul class="d-flex flex-column">
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png"
+                                                            alt="">Python-разработчик</a>
+                                                </li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">Java-разработчик</a>
+                                                </li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">Блокчейн-разработка
+                                                        для
+                                                        начинающих</a></li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">ChatGpt</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul class="d-flex flex-column">
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png"
+                                                            alt="">Python-разработчик</a>
+                                                </li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">Java-разработчик</a>
+                                                </li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">Блокчейн-разработка
+                                                        для
+                                                        начинающих</a></li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">ChatGpt</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul class="d-flex flex-column">
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png"
+                                                            alt="">Python-разработчик</a>
+                                                </li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">Java-разработчик</a>
+                                                </li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">Блокчейн-разработка
+                                                        для
+                                                        начинающих</a></li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">ChatGpt</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul class="d-flex flex-column">
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png"
+                                                            alt="">Python-разработчик</a>
+                                                </li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">Java-разработчик</a>
+                                                </li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">Блокчейн-разработка
+                                                        для
+                                                        начинающих</a></li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">ChatGpt</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul class="d-flex flex-column">
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png"
+                                                            alt="">Python-разработчик</a>
+                                                </li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">Java-разработчик</a>
+                                                </li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">Блокчейн-разработка
+                                                        для
+                                                        начинающих</a></li>
+                                                <li><a class="d-flex align-items-center" href="#"><img
+                                                            src="images/header-slider-1.png" alt="">ChatGpt</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="library/jquery/jquery.js"></script>
+<script src="library/swiper/swiper-bundle.min.js"></script>
+<script src="library/bootstrap/bootstrap.min.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

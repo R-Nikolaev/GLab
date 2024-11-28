@@ -1,0 +1,70 @@
+@import "reset";
+@import "vars";
+@import "mixins";
+
+body {
+  font-family: var(--font-family);
+  letter-spacing: 1px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  li {
+    list-style-type: none;
+  }
+}
+html {
+  scroll-behavior: smooth; /* Включение плавного скролла для якорей */
+}
+@media (min-width: 1900px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1740px;
+  }
+}
+.btn {
+  border-radius: 40px;
+  background-color: var(--grayscale-01);
+  color: var(--white);
+  transition: all .5s ease-in-out;
+}
+.section-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 62.4px;
+  color: var(--grayscale-01);
+  text-align: center;
+  margin-bottom: 100px;
+  
+  @include media-mx(991) {
+    font-size: 24px;
+    text-align: left;
+    line-height: 28.8px;
+  }
+  span{
+    border-radius: 16px;
+    padding: 4px 24px;
+    @include media-mx(991) {
+      margin: 0!important;
+      padding: 0!important;
+    }
+  }
+}
+@import "blocks/banner";
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/about";
+@import "blocks/programs";
+@import "blocks/test";
+@import "blocks/awesome";
+@import "blocks/reviews";
+@import "blocks/result";
+@import "blocks/footer";
+@import "blocks/modal";
